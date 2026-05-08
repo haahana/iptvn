@@ -31,8 +31,12 @@ const FEATURES = [
 
 const FAQS = [
   {
+    q: "How does the IPTV free 24 hours trial work?",
+    a: "It's simple! Just click the '24H Free Trial' button, and our trial setup script will quickly open. You'll instantly receive access to our entire premium catalog (all channels, VODs) absolutely free for a full 24 hours. No payment details required."
+  },
+  {
     q: "Available payment methods?",
-    a: "We currently accept Credit Card, Crypto, and PayPal as payment methods."
+    a: "We currently accept Credit Card, Crypto, and PayPal as payment methods after your free trial ends."
   },
   {
     q: "Which devices can be used for IPTV?",
@@ -204,8 +208,8 @@ export default function App() {
                 transition={{ duration: 0.6 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight"
               >
-                High-Quality IPTV<br />
-                Subscription Service
+                Claim Your IPTV<br />
+                Free 24 Hours Trial
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -213,7 +217,7 @@ export default function App() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-base text-gray-300 mb-8 leading-relaxed max-w-lg"
               >
-                Discover our Premium IPTV Subscription: elevate your entertainment with 4K streaming across all devices, anytime, anywhere. Enjoy access to over 18,000 channels and 88,000+ VOD options, backed by our 100% uptime guarantee.
+                Experience the ultimate entertainment with our premium IPTV free 24 hours test. We are the top provider for free 24-hour IPTV trials in 2026. Watch 18,000+ top channels and 88,000+ VODs risk-free before you subscribe.
               </motion.p>
               
               <motion.div 
@@ -222,20 +226,20 @@ export default function App() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="mb-10 flex gap-4 flex-wrap"
               >
+                <button 
+                  onClick={handleFreeTrial}
+                  className="px-8 py-3 text-base font-bold rounded bg-[#6a35ff] text-white hover:bg-[#5629cc] transition-colors shadow-[0_0_15px_rgba(106,53,255,0.4)]"
+                >
+                  Get 24H Free Trial Now
+                </button>
                 <a 
                   href={getWhatsappLink()}
                   target="_blank"
                   rel="noreferrer"
-                  className="px-8 py-3 text-base font-bold rounded bg-[#6a35ff] text-white hover:bg-[#5629cc] transition-colors shadow-[0_0_15px_rgba(106,53,255,0.4)]"
+                  className="px-8 py-3 text-base font-bold rounded border border-[#6a35ff] text-white hover:bg-[#6a35ff]/20 transition-colors"
                 >
                   Subscribe Now
                 </a>
-                <button 
-                  onClick={handleFreeTrial}
-                  className="px-8 py-3 text-base font-bold rounded border border-[#6a35ff] text-white hover:bg-[#6a35ff]/20 transition-colors"
-                >
-                  24H Free Trial
-                </button>
               </motion.div>
 
               {/* Supported Devices Icons */}
@@ -307,25 +311,25 @@ export default function App() {
           <div className="grid md:grid-cols-3 gap-6 mb-20">
             <div className="bg-[#150d28] p-6 border border-[#2a1b4d] rounded flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
               <img src="https://i.postimg.cc/D77Zt80N/Icon.png" className="w-16 h-16 mb-4 object-contain" alt="Coverage Icon" />
-              <h3 className="text-[13px] font-bold text-white mb-2 uppercase tracking-wide">IPTV Subscription Coverage<br/>in 115 Countries</h3>
+              <h3 className="text-[13px] font-bold text-white mb-2 uppercase tracking-wide">IPTV Free 24 Hours Trial<br/>in 115 Countries</h3>
               <p className="text-[11px] text-gray-400 leading-relaxed">
-                Watch global TV channels with our IPTV subscription service, spanning Netherlands, Belgium, Germany, UK, Spain, Portugal, Poland, Italy, Israel, Ex-Yu, Hindi, Arabic, Turkey, and more!
+                Test our global TV channels completely free. Claim your IPTV free 24 hours trial to watch streams in Netherlands, UK, USA, Arabic, Turkey, and more before subscribing!
               </p>
             </div>
             
             <div className="bg-[#150d28] p-6 border border-[#2a1b4d] rounded flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
               <img src="https://i.postimg.cc/jRR5GL2k/Icon-2.png" className="w-16 h-16 mb-4 object-contain" alt="Guaranteed Icon" />
-              <h3 className="text-[13px] font-bold text-white mb-2 uppercase tracking-wide">Guaranteed IPTV<br/>Subscription Service<br/>Excellence</h3>
+              <h3 className="text-[13px] font-bold text-white mb-2 uppercase tracking-wide">Guaranteed IPTV<br/>24H Trial Excellence</h3>
               <p className="text-[11px] text-gray-400 leading-relaxed">
-                Choose your IPTV subscription and enjoy our top-notch service firsthand. Experience reliable IPTV options and discover why customers choose our plans.
+                Choose top-notch service firsthand. Grab your IPTV free 24 hours trial today and discover why millions choose our premium ad-free platform.
               </p>
             </div>
 
             <div className="bg-[#150d28] p-6 border border-[#2a1b4d] rounded flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
               <img src="https://i.postimg.cc/SmmswJR1/Icon-1.png" className="w-16 h-16 mb-4 object-contain" alt="Experience Icon" />
-              <h3 className="text-[13px] font-bold text-white mb-2 uppercase tracking-wide">Experience IPTV<br/>subscription service with<br/>unparalleled server quality</h3>
+              <h3 className="text-[13px] font-bold text-white mb-2 uppercase tracking-wide">Experience Free 24H Trial<br/>With 4K/8K Server Quality</h3>
               <p className="text-[11px] text-gray-400 leading-relaxed">
-                delivering HD, FHD, 4K, and 8K IPTV streams. View IPTV Anywhere, Any Image Quality: Mobile, TV, Android Box, PC.
+                Unlock HD, FHD, 4K, and 8K IPTV streams entirely free. Enjoy the smartest IPTV free 24 hours trial on TV, Android Box, Mobile, and PC!
               </p>
             </div>
           </div>
@@ -333,8 +337,8 @@ export default function App() {
           <div className="text-center mb-10">
             <h2 className="text-xl md:text-2xl font-bold text-white max-w-2xl mx-auto leading-snug">
               In-Demand Movies, Shows, News & Sports:<br/>
-              Unlock All-in-One Entertainment with Our<br/>
-              IPTV Subscription
+              Unlock All-in-One Entertainment with Your<br/>
+              IPTV Free 24 Hours Trial
             </h2>
           </div>
 
@@ -371,9 +375,9 @@ export default function App() {
       <section id="pricing" className="py-20 bg-[#150d28]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Select Your Subscription: Explore<br/>IPTV Plans Tailored to Your<br/>Viewing Needs</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Start With Your IPTV Free 24 Hours Trial<br/>Then Pick A Tailored Plan</h2>
             <p className="text-sm text-gray-400">
-              Not sure? <button onClick={handleFreeTrial} className="text-[#6a35ff] hover:text-[#906cff] underline">Subscribe to our IPTV service</button>
+              Not sure yet? <button onClick={handleFreeTrial} className="text-[#6a35ff] font-bold hover:text-[#906cff] underline">Claim your free 24H test now</button>
             </p>
           </div>
 
@@ -420,7 +424,7 @@ export default function App() {
       <section id="how-it-works" className="py-24 border-y border-[#2a1b4d]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-white">How does it work? IPTV Subscription</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-white">How to Get Your IPTV Free 24 Hours Trial?</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12 relative">
@@ -428,9 +432,9 @@ export default function App() {
               <div className="w-16 h-16 rounded bg-[#2a1b4d] flex items-center justify-center mb-6">
                 <img src="https://i.postimg.cc/SmmswJR1/Icon-1.png" className="w-10 h-10 object-contain" alt="Play Icon" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">1. Place your order</h3>
+              <h3 className="text-xl font-bold text-white mb-4">1. Request Free Trial</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Place your order by choosing your preferred subscription period : 1, 3, 6 or 12 months.<br/><br/>Note: Contact us on WhatsApp after choosing your preferred plan so we can activate your subscription.
+                Click any of the "24H Free Trial" buttons or contact us on WhatsApp to request your free 24 hours test right away.<br/><br/>No credit card required. Test our premium platform risk-free!
               </p>
             </div>
 
@@ -438,10 +442,10 @@ export default function App() {
               <div className="w-16 h-16 rounded bg-[#2a1b4d] flex items-center justify-center mb-6">
                 <img src="https://i.postimg.cc/jRR5GL2k/Icon-2.png" className="w-10 h-10 object-contain" alt="Shield Icon" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">2. Get your account</h3>
+              <h3 className="text-xl font-bold text-white mb-4">2. Setup Your Account</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                This process typically takes 5 to 10 minutes to set up your account.<br/><br/>
-                If you encounter any issues, please contact us via WhatsApp at **+212 667-816780**.
+                We'll instantly provide your free credentials. This process typically takes 5 to 10 minutes to set up your trial account.<br/><br/>
+                Need help? WhatsApp us at **+212 667-816780**.
               </p>
             </div>
 
@@ -449,25 +453,25 @@ export default function App() {
               <div className="w-16 h-16 rounded bg-[#2a1b4d] flex items-center justify-center mb-6">
                 <img src="https://i.postimg.cc/2CC6PVy0/Film-Strip.png" className="w-10 h-10 object-contain" alt="Film Icon" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">3. Enjoy your IPTV service!</h3>
+              <h3 className="text-xl font-bold text-white mb-4">3. Test Premium TV For Free!</h3>
               <p className="text-sm text-gray-400 leading-relaxed mb-6">
-                Enjoy all channels, films and series now!
+                Enjoy all 18,000+ VIP channels, movies and series completely free for a full day. If you love it, you can upgrade anytime.
               </p>
               <div className="flex gap-2">
+                <button 
+                  onClick={handleFreeTrial}
+                  className="w-fit px-6 py-2.5 text-sm font-bold rounded bg-[#6a35ff] text-white hover:bg-[#5629cc] transition-colors"
+                >
+                  Get 24H Free Trial
+                </button>
                 <a 
                   href={getWhatsappLink()}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-fit px-6 py-2.5 text-sm font-bold rounded bg-[#6a35ff] text-white hover:bg-[#5629cc] transition-colors"
-                >
-                  Subscribe Now
-                </a>
-                <button 
-                  onClick={handleFreeTrial}
                   className="w-fit px-6 py-2.5 text-sm font-bold rounded border border-[#6a35ff] text-white hover:bg-[#6a35ff]/20 transition-colors"
                 >
-                  24H Free Trial
-                </button>
+                  Subscribe Plan
+                </a>
               </div>
             </div>
           </div>
